@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+#root,
+#card {
+  background: linear-gradient(278deg, #42506b, #d8caca, #7e3a3a);
+  background-size: 800% 800%;
+
+    -webkit-animation: gradient-animation 7s ease infinite;
+    -moz-animation: gradient-animation 7s ease infinite;
+    animation: gradient-animation 7s ease infinite;
+}
+
+/* GRADIENT ANIMATIONS */
+@-webkit-keyframes gradient-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes gradient-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradient-animation {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
